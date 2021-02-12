@@ -1,5 +1,5 @@
 const parse = require('pg-connection-string').parse
-module.exports = ({ env }) =>{
+module.exports = ({ env }) => {
 
   if(env('NODE_ENV') === 'production') {
     const config = parse(process.env.DATABASE_URL)
@@ -40,4 +40,5 @@ module.exports = ({ env }) =>{
       },
     },
   }
-};
+}
+
