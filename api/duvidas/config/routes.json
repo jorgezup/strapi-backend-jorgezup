@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/duvidas",
+      "handler": "duvidas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/duvidas",
+      "handler": "duvidas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/duvidas",
+      "handler": "duvidas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

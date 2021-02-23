@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "tratamentos",
+  "info": {
+    "name": "Tratamentos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "basic": {
+      "type": "component",
+      "repeatable": true,
+      "component": "generic.basic"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

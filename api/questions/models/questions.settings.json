@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "questions",
+  "info": {
+    "name": "Questions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "questions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "generic.only-content"
+    },
+    "introduction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.basic-with-color"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "introducaos",
+  "info": {
+    "name": "Introducao"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "introduction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "generic.basic-with-color"
+    }
+  }
+}

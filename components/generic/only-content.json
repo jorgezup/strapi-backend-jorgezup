@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_generic_only_contents",
+  "info": {
+    "name": "onlyContent",
+    "icon": "atom"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "string"
+    }
+  }
+}

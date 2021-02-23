@@ -1,9 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "pages",
+  "collectionName": "heroes",
   "info": {
-    "name": "page",
-    "description": ""
+    "name": "Hero"
   },
   "options": {
     "increments": true,
@@ -11,17 +10,8 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
-      "type": "text"
-    },
-    "description": {
-      "type": "text"
-    },
-    "url": {
-      "type": "string"
-    },
-    "image": {
-      "collection": "file",
+    "background": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -31,8 +21,22 @@
       "plugin": "upload",
       "required": false
     },
-    "type": {
+    "text1": {
       "type": "string"
+    },
+    "text2": {
+      "type": "string"
+    },
+    "text3": {
+      "type": "string"
+    },
+    "text4": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "button.avaliacao"
     }
   }
 }

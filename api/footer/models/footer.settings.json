@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "pages",
+  "collectionName": "footers",
   "info": {
-    "name": "page",
+    "name": "Footer",
     "description": ""
   },
   "options": {
@@ -11,17 +11,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
-      "type": "text"
+    "social": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media-social.social"
     },
-    "description": {
-      "type": "text"
-    },
-    "url": {
-      "type": "string"
-    },
-    "image": {
-      "collection": "file",
+    "logo": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -30,9 +26,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "type": {
-      "type": "string"
     }
   }
 }

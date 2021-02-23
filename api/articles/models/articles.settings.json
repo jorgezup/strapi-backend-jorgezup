@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "articles",
   "info": {
-    "name": "Articles"
+    "name": "Articles",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "content": {
       "type": "richtext"
     },
@@ -32,7 +30,25 @@
     },
     "section": {
       "type": "dynamiczone",
-      "components": []
+      "components": [
+        "button.avaliacao",
+        "generic.basic-with-color",
+        "generic.basic",
+        "generic.doubts",
+        "generic.video"
+      ]
+    },
+    "title": {
+      "type": "richtext"
+    },
+    "color": {
+      "type": "string"
+    },
+    "secondcontent": {
+      "type": "richtext"
+    },
+    "titletextcolor": {
+      "type": "string"
     }
   }
 }

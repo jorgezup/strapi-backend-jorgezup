@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/depoimentos",
+      "handler": "depoimentos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/depoimentos",
+      "handler": "depoimentos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/depoimentos",
+      "handler": "depoimentos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

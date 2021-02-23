@@ -1,8 +1,9 @@
 {
   "kind": "singleType",
-  "collectionName": "homepages",
+  "collectionName": "duvidas",
   "info": {
-    "name": "homepage"
+    "name": "Duvidas",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,8 +14,10 @@
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "richtext"
+    "doubts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "generic.basic"
     }
   }
 }

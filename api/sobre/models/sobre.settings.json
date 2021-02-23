@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "pages",
+  "collectionName": "sobres",
   "info": {
-    "name": "page",
+    "name": "Sobre",
     "description": ""
   },
   "options": {
@@ -12,16 +12,13 @@
   },
   "attributes": {
     "title": {
-      "type": "text"
-    },
-    "description": {
-      "type": "text"
-    },
-    "url": {
       "type": "string"
     },
+    "description": {
+      "type": "richtext"
+    },
     "image": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -31,8 +28,10 @@
       "plugin": "upload",
       "required": false
     },
-    "type": {
-      "type": "string"
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "button.avaliacao"
     }
   }
 }

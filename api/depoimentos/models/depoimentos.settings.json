@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "depoimentos",
+  "info": {
+    "name": "Depoimentos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "titletextcolor": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "generic.testemunho"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tratamentos",
+      "handler": "tratamentos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tratamentos",
+      "handler": "tratamentos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tratamentos",
+      "handler": "tratamentos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
