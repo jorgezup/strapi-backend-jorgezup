@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "heroes",
   "info": {
-    "name": "Hero"
+    "name": "Hero",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,22 +22,22 @@
       "plugin": "upload",
       "required": false
     },
-    "text1": {
-      "type": "string"
-    },
-    "text2": {
-      "type": "string"
-    },
-    "text3": {
-      "type": "string"
-    },
-    "text4": {
-      "type": "string"
-    },
     "button": {
       "type": "component",
       "repeatable": false,
       "component": "button.avaliacao"
+    },
+    "text1": {
+      "type": "richtext"
+    },
+    "text2": {
+      "type": "richtext"
+    },
+    "text3": {
+      "type": "richtext"
+    },
+    "text4": {
+      "type": "richtext"
     }
   }
 }
