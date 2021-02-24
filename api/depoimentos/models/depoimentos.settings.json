@@ -24,6 +24,11 @@
       "type": "component",
       "repeatable": true,
       "component": "generic.testemunho"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "button.avaliacao"
     }
   }
 }
